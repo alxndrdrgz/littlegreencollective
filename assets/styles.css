@@ -30,7 +30,7 @@ img {
 main {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: show;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,6 +92,7 @@ nav {
 .about-text-box h1 {
   font-size: 65px;
   width: 75%;
+  font-family: "Rubik Doodle Shadow", sans-serif;
 }
 
 /* .about-text-box p {
@@ -106,7 +107,42 @@ nav {
   width: 100%;
   border-radius: 8px;
 }
+/* Contact styles */
 
+.contact-content-box {
+  margin: 20px 0 20px 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#283116;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contact-content-box h2 {
+  font-size: 55px;
+  margin-bottom: 0px;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+} 
+
+.contact-content-box p {
+  font-size: 30px;
+}
+
+.form-container {
+  border: 1px solid red;
+  max-width: 800px;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+
+.form-container form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 /* footer styles below */
 footer {
   width: 100%;
