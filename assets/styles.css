@@ -159,11 +159,6 @@ nav {
   flex: 1 1 100%;
 }
 
-@media (min-width: 600px) {
-  .input-row .input-group {
-    flex: 1 1 calc(50% - 0.5rem);
-  }
-}
 
 .input-group {
   margin-bottom: 1.5em;
@@ -184,7 +179,6 @@ nav {
   border-color: #ffc338;
 }
 
-/* Make submit button consistent */
 button.button {
   padding: 0.75rem 1rem;
   font-size: 1rem;
@@ -199,6 +193,51 @@ button.button {
 
 button.button:hover {
   background-color: #ffc338;
+}
+
+/* Project Gallery styles below */
+#our-work {
+  margin: 5% 0;
+  padding:0 0 8%;
+  background-color: #ffc338;
+}
+.project-header {
+  font-size: 55px;
+  margin-bottom: 0px;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+  margin: 70px 0 70px 0;
+  text-align: center;
+}
+
+.project-gallery-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 10%;
+  row-gap: 5%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 0;
+}
+.project-text-container p {
+  margin: 0;
+}
+
+.project-image-container {
+  max-width: 600px;
+}
+
+.project-image-container img {
+  width: 100%;
+  border-radius: 4px;
 }
 
 /* footer styles below */
@@ -219,5 +258,13 @@ footer {
   justify-content: center;
   height: 100%;
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+  .input-row .input-group {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}
+
 /* colours
 #D7F139; (green) */
